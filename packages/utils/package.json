@@ -1,9 +1,12 @@
 {
-  "name": "@light/utils",
-  "version": "0.0.1-alpha.1",
-  "description": "Utils of @light/components",
+  "name": "@goblinalchemist/utils",
+  "version": "0.0.1-alpha.2",
+  "description": "Utils of @goblinalchemist/components",
   "type": "module",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "umd": "./dist/umd/light-utils.js",
@@ -18,11 +21,10 @@
     "build:cjs": "tsc -b ./tsconfig.cjs.json",
     "build:es": "tsc -b ./tsconfig.esm.json",
     "build:types": "tsc -b ./tsconfig.types.json",
-    "build:umd": "cross-env NODE_ENV=development rollup -c -o dist/umd/light-utils.js",
-    "build:umd:min": "cross-env NODE_ENV=production rollup -c -o dist/umd/light-utils.min.js",
+    "build:umd": "cross-env NODE_ENV=development rollup -c -o dist/umd/goblinalchemist-utils.js",
+    "build:umd:min": "cross-env NODE_ENV=production rollup -c -o dist/umd/goblinalchemist-utils.min.js",
     "build": "pnpm run clean && npm-run-all build:cjs build:es build:types build:umd build:umd:min",
-    "clean": "rimraf lib dist es",
-    "prepublishOnly": "pnpm run build"
+    "clean": "rimraf lib dist es"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",

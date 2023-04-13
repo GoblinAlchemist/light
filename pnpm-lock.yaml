@@ -38,7 +38,7 @@ importers:
 
   packages/components:
     specifiers:
-      '@light/utils': workspace:*
+      '@goblinalchemist/utils': workspace:*
       '@rollup/plugin-terser': ^0.4.0
       '@rollup/plugin-typescript': ^11.0.0
       '@sveltejs/vite-plugin-svelte': ^2.0.3
@@ -50,7 +50,7 @@ importers:
       svelte-preprocess: ^4.10.7
       vite: ^4.2.0
     dependencies:
-      '@light/utils': link:../utils
+      '@goblinalchemist/utils': link:../utils
     devDependencies:
       '@rollup/plugin-terser': 0.4.0
       '@rollup/plugin-typescript': 11.0.0_tslib@2.5.0+typescript@4.9.5

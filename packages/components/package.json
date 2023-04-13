@@ -1,5 +1,5 @@
 {
-  "name": "@light/components",
+  "name": "@goblinalchemist/components",
   "description": "A UI Components Library for Svelte 3",
   "version": "0.0.1-alpha.1",
   "type": "module",
@@ -42,7 +42,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
-    "@light/utils": "workspace:*"
+    "@goblinalchemist/utils": "workspace:*"
   },
   "peerDependencies": {
     "svelte": "^3.55.1",

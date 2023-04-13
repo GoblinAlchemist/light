@@ -5,7 +5,7 @@
    */
   import { createEventDispatcher } from "svelte";
   import { ripple } from "../utils";
-  import { classes, eventsAction } from "@light/utils";
+  import { classes, eventsAction } from "@goblinalchemist/utils";
 
   let _class = null;
   /** @type {string | false | null} */
