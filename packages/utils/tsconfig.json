@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": false,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "types": ["node"],
+    "lib": ["es5", "es2018", "dom"],
+    "downlevelIteration": true //支持set等的迭代
+  },
+  "include": ["./src/**/*.ts", "src/event.js", "src/event.js"]
+}

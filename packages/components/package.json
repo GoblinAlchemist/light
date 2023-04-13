@@ -1,0 +1,58 @@
+{
+  "name": "@light/components",
+  "description": "A UI Components Library for Svelte 3",
+  "version": "0.0.1-alpha.1",
+  "type": "module",
+  "main": "./lib/components/index.umd.cjs",
+  "module": "./lib/components/index.js",
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "pnpm run build && node --unhandled-rejections=strict check-version.ts"
+  },
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./lib/index.cjs"
+    },
+    "./es": "./es/index.js",
+    "./lib": "./lib/index.cjs",
+    "./es/*.js": "./es/*.js",
+    "./es/*": "./es/*.js",
+    "./lib/*.cjs": "./lib/*.cjs",
+    "./lib/*": "./lib/*.cjs",
+    "./*": "./*"
+  },
+  "keywords": [
+    "lightjs",
+    "component library",
+    "ui framework",
+    "ui",
+    "svelte"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "@tsconfig/svelte": "^3.0.0",
+    "@types/node": "^18.15.11",
+    "pkg-versions": "^3.0.0",
+    "svelte": "^3.55.1",
+    "svelte-check": "^2.10.3",
+    "svelte-preprocess": "^4.10.7",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "@light/utils": "workspace:*"
+  },
+  "peerDependencies": {
+    "svelte": "^3.55.1",
+    "svelte-preprocess": "^4.10.7"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "author": "marui01",
+  "license": "MIT"
+}
