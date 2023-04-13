@@ -35,5 +35,14 @@
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GoblinAlchemist/light.git"
+  },
+  "author": "GoblinAlchemist",
+  "bugs": {
+    "url": "https://github.com/GoblinAlchemist/light/issues"
+  },
+  "homepage": "https://github.com/GoblinAlchemist/light#readme"
 }
