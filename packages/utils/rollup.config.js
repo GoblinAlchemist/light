@@ -12,23 +12,24 @@ const config = {
     format: "umd",
     name: "LightUtils",
   },
-  external: { svelte: "^3.0.0" },
+  external: ["svelte"],
   plugins: [
     commonjs(),
     nodeResolve({
-      mainFields: ["jsnext"],
+      mainFields: ["main", "module"],
     }),
     typescript({
       tsconfig: "./tsconfig.esm.rollup.json",
     }),
     replace({
       "process.env.NODE_ENV": JSON.stringify(env),
+      preventAssignment: true,
     }),
   ],
 };
 
 if (env === "production") {
-  config.plugins.push(terser());
+  config.plugins.push(terser({ mangle: { properties: true } }));
 }
 
 export default config;

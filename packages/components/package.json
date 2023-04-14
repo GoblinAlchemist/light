@@ -2,6 +2,7 @@
   "name": "@goblinalchemist/components",
   "description": "A UI Components Library for Svelte 3",
   "version": "0.0.1-alpha.1",
+  "files": ["dist"],
   "type": "module",
   "main": "./lib/components/index.umd.cjs",
   "module": "./lib/components/index.js",
