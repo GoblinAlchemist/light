@@ -7,13 +7,11 @@
     "dev": "vite",
     "build": "pnpm run --dir packages/components build",
     "build:utils": "pnpm run --dir packages/utils build",
+    "build:icons": "pnpm run --dir packages/icons-svg build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "publish:utils": "cd packages/utils && npm publish --access public"
   },
-  "main": "./lib/light-components-svelte.umd.cjs",
-  "module": "./lib/light-components-svelte.js",
-  "typings": "./lib/index.d.ts",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",

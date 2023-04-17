@@ -48,7 +48,7 @@ export default defineConfig({
           format: "cjs",
         },
       ],
-      plugins: [terser()],
+      plugins: [terser({ mangle: { properties: true } })],
     },
   },
 });

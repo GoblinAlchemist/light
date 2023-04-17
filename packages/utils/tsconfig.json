@@ -7,7 +7,7 @@
     "sourceMap": false,
     "types": ["node"],
     "lib": ["es5", "es2018", "dom"],
-    "downlevelIteration": true //支持set等的迭代
+    "downlevelIteration": true
   },
-  "include": ["./src/**/*.ts", "src/event.js", "src/event.js"]
+  "include": ["./src/**/*.ts"]
 }

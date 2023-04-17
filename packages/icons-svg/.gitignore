@@ -1,0 +1,10 @@
+# auto generated
+_site/
+.cache
+public
+src
+inline-svg
+inline-namespaced-svg
+!docs/inline-svg
+es
+lib
