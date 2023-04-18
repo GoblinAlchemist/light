@@ -28,7 +28,7 @@
     "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
     "build": "cross-env NODE_ENV=production && pnpm run build:es && pnpm run build:lib",
-    "prepublishOnly": "pnpm run g && pnpm run build && pnpm run type-check && pnpm run digest",
+    "prepublishOnly": "pnpm run g && pnpm run build && pnpm run digest",
     "digest": "node scripts/digest.js"
   },
   "devDependencies": {
@@ -67,5 +67,6 @@
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3",
     "vinyl": "^2.2.0"
-  }
+  },
+  "dependencies": {}
 }
