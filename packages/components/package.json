@@ -8,7 +8,8 @@
   "module": "./lib/components/index.js",
   "scripts": {
     "build": "vite build",
-    "prepublishOnly": "pnpm run build && node --unhandled-rejections=strict check-version.ts"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepublishOnly": "pnpm run build && node --unhandled-rejections=strict check-version.js"
   },
   "exports": {
     ".": {

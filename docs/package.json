@@ -1,0 +1,7 @@
+{
+  "name": "@goblinalchemist/docs",
+  "description": "A docs site of @goblinalchemist/components",
+  "dependencies": {
+    "@goblinalchemist/components": "workspace:*"
+  }
+}
